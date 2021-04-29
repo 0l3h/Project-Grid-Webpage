@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    text-align: center;
+}
+
+/* Приветствие */
+header {
+    display: grid;
+    align-content: center;
+    background-image: url(./../Images/HeaderPhoto.jpeg);
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+}
+
+header > h1 {
+    justify-self: center;
+    color: white;
+    margin-top: 10vh;
+    margin-bottom: 0;
+}
+
+/* Кнопка */
+a {
+    justify-self: center;
+    padding: 2vh;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10vh;
+    background-color: rgb(59, 59, 59);
+}
+
+header > p {
+    height: fit-content;
+    color: white;
+    margin: 5%;
+    justify-self: center;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Информация №1 */
+#read-more {
+    color: black;
+    text-align: center;
+    padding: 2vh;
+}
+
+/* Контейнер с карточками №1 */
+.card-container {
+    display: grid;
+    background-color: rgb(65, 65, 65);
+    color: white;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 800px));
+    column-gap: 5%;
+    justify-content: center;
+    padding: 50px;
+}
+
+/* Фото для карточек №1*/
+article > img {
+    width: 100%;
+}
+
+/* Карточки №1 */
+.card-container > article {
+    background-color: white;
+    color: black;
+    margin: 10% 0;
+}
+
+/* Информация №2 */
+#info {
+    height: fit-content;
+    padding: 30px;
+}
+
+/* Контейнер с карточками №2 */
+.additional-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Карточки №2*/
+.additional-info > article  {
+    display: flex;
+    background-color: rgb(85, 154, 233);
+    flex-direction: column;
+    row-gap: 0;
+    color: white;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.additional-info > article + article {
+    background-color: rgb(63, 63, 63);
+}
+
+/* Футер */
+footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    background-color: black;
+    justify-content: space-evenly;
+    padding: 2%;
+}
+
+footer > div {
+    color: white;
+    text-align: center;
+}
